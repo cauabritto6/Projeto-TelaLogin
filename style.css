@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2? family = Yaldevi & display = swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body, html {
+    min-height: 100vh;
+    min-width: 100vw;
+    background: linear-gradient(70deg, #042a2e9f 1%, #07a0b0 72%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 480px;
+    min-height: 440px;
+    min-width: 500px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Yaldevi', sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-left: 7px;
+}
+
+main {
+    margin: auto;
+    width: 80%;
+    height: 70%;
+}
+
+main form{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.input-field{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius:  10px;
+    height: 4.5rem;
+    border: 2px solid #ffffff;
+    flex-direction: row-reverse;
+    transition: .2s;
+}
+
+.input-field:hover{
+    border: 2px solid #ffffffc2;
+}
+
+.input-field input{
+    border: none;
+    outline: none;
+    background: #ffffff;
+    width: 82%;
+    height: 4.5rem;
+    padding-left: 10px;
+    font-family: 'Yaldevi', sans-serif;
+    font-size: 2rem;
+    border-radius: 0 8px 8px 0;
+    transition: .2s;
+}
+
+.input-field:hover > input{
+    background-color: #ffffffc2;
+}
+
+::-webkit-input-placeholder{
+    color: #2f2f2f;
+    font-weight: 250;
+}
+
+.input-field label{
+    height: 5.5rem;
+    width: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-field label img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.checkbox label{
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.checkbox label:hover {
+    color: #ffffffc2;
+} 
+
+.checkbox input {
+    display: none;
+
+}
+
+.checkbox input + label:before {
+    content: '';
+    display: inline-block;
+    width: 1.8rem;
+    height: 1.8rem;
+    vertical-align: middle;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.checkbox input:checked + label:before {
+    background: url(./imagens/check.svg) no-repeat center;
+}
+
+form button {
+    height: 4.5rem;
+    background-color:#03515a; 
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    font-size: 3rem;
+    font-family: "Rubik";
+    transition: .2s;
+}
+
+form button:hover{
+    background: #03515abd;
+
+}
+
+.content footer{
+
+    margin: auto;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20%;
+    border-bottom: 2px solid #ffffff;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: "Rubik";
+    font-style: italic; 
+    transition: .2s;
+}
+
+footer a:hover {
+    color: #ffffffc2;
+}
+
+@media (max-width: 450px) {
+
+    html {
+        font-size: 50%;
+    }
+
+    h1 {
+        display: none;
+    }
+
+    .content main, .content footer { 
+        width: 50%;
+    }
+
+}
+
+@media (max-height: 480px) {
+
+    html {
+        font-size: 50%;
+    }
+
+    h1 {
+        display: none;
+    }
+
+    .content main, .content footer { 
+        height: 100%;
+    }
+
+}
+
+
+ 
+
+
+
+
+
+
+
+
+
+
